@@ -1,5 +1,5 @@
 import { Dispatch } from "react";
-import { AuthAction } from "../reducers/authReducer";
+import { AuthAction } from "./AuthProvider";
 import React from "react";
 
 interface AuthContextType {
@@ -9,4 +9,4 @@ interface AuthContextType {
 
 const AuthContext = React.createContext<AuthContextType>({} as AuthContextType);
 
-export default AuthContext;
+export default AuthContext; 
